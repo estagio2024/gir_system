@@ -40,6 +40,9 @@
         .parallax-container {
             height: 300px;
         }
+        .icon-block {
+            margin-top: 20px;
+        }
         @media only screen and (max-width: 600px) {
             header {
                 padding: 20px 0;
@@ -75,12 +78,12 @@
     </div>
 </section>
 
-<!-- Parcerias -->
+<!-- Parcerias (Com ícones) -->
 <section id="parcerias">
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <h3 class="center-align">Nossas Parcerias</h3>
+                <h3 class="center-align"><i class="material-icons">group</i> Nossas Parcerias</h3>
                 <p class="light center-align">Unimos forças com empresas líderes para assegurar a melhor destinação de resíduos e promover práticas sustentáveis.</p>
             </div>
         </div>
@@ -92,7 +95,7 @@
     <div class="parallax"><img src="https://via.placeholder.com/1200x300" alt="Sustentabilidade e Parcerias"></div>
 </div>
 
-<!-- Principais Vantagens -->
+<!-- Principais Vantagens (Com ícones) -->
 <section id="vantagens">
     <div class="container">
         <div class="row">
@@ -121,10 +124,10 @@
     </div>
 </section>
 
-<!-- Dificuldades na Gestão de Resíduos -->
+<!-- Dificuldades na Gestão de Resíduos (Com ícones) -->
 <section id="dificuldades">
     <div class="container">
-        <h3 class="center-align">Dificuldades na Gestão de Resíduos</h3>
+        <h3 class="center-align"><i class="material-icons">report_problem</i> Dificuldades na Gestão de Resíduos</h3>
         <p class="light center-align">Desafios como falta de conhecimento e planejamento inadequado ainda dificultam uma gestão eficiente dos resíduos em muitas empresas.</p>
     </div>
 </section>
@@ -134,12 +137,12 @@
     <div class="parallax"><img src="https://via.placeholder.com/1200x300" alt="Gestão de Resíduos Sustentável"></div>
 </div>
 
-<!-- Contato (Com botão para redirecionar para página de contato) -->
+<!-- Contato (Com botão para redirecionar para página de contato e ícone) -->
 <section id="contato">
     <div class="container center-align">
-        <h3>Entre em Contato</h3>
+        <h3><i class="material-icons">contact_mail</i> Entre em Contato</h3>
         <p class="light">Fale conosco e descubra como podemos ajudar na gestão sustentável dos resíduos da sua empresa.</p>
-        <a href="contato.php" class="btn btn-large btn-custom waves-effect">Formulário de Contato</a>
+        <a href="contato.php" class="btn btn-large btn-custom waves-effect"><i class="material-icons left">send</i>Formulário de Contato</a>
     </div>
 </section>
 
@@ -163,7 +166,7 @@
         var instances = M.Carousel.init(elems, {
             fullWidth: true,
             indicators: true,
-            duration: 5000 // Tempo de rotação das imagens
+            duration: 1000 // Tempo de rotação das imagens
         });
 
         // Função para automatizar a rotação do slide
@@ -171,7 +174,7 @@
             var elem = document.querySelector('.carousel');
             var instance = M.Carousel.getInstance(elem);
             instance.next();
-        }, 1500); // 1 segundo
+        }, 1000); // 1 segundo
     });
 </script>
 
