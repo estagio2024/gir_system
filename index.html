@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Resíduos</title>
+    <!-- Importando o MaterializeCSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Ícones do Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        header {
+            background-color: #0288d1; /* Azul suave */
+            color: white;
+            padding: 50px 0;
+        }
+        section {
+            padding: 60px 0;
+        }
+        #slide {
+            padding: 0;
+        }
+        .carousel {
+            height: 400px;
+        }
+        .carousel .carousel-item {
+            width: 100%;
+        }
+        #parcerias, #vantagens, #dificuldades {
+            background-color: #f5f5f5; /* Cinza claro */
+        }
+        footer {
+            background-color: #01579b; /* Azul escuro */
+            color: white;
+            padding: 20px 0;
+        }
+        .btn-custom {
+            background-color: #0288d1; /* Azul suave */
+        }
+        .parallax-container {
+            height: 300px;
+        }
+        @media only screen and (max-width: 600px) {
+            header {
+                padding: 20px 0;
+            }
+            .carousel .carousel-item {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Cabeçalho -->
+<header>
+    <div class="container center-align">
+        <h1>Gestão de Resíduos</h1>
+        <h5>Soluções Sustentáveis para um Mundo Melhor</h5>
+    </div>
+</header>
+
+<!-- Slide de Imagens -->
+<section id="slide">
+    <div class="carousel carousel-slider center">
+        <div class="carousel-item" href="#one!">
+            <img src="https://via.placeholder.com/1200x400/0288d1/ffffff?text=Gestão+Sustentável" alt="Gestão Sustentável">
+        </div>
+        <div class="carousel-item" href="#two!">
+            <img src="https://via.placeholder.com/1200x400/4caf50/ffffff?text=Reciclagem+Efetiva" alt="Reciclagem Efetiva">
+        </div>
+        <div class="carousel-item" href="#three!">
+            <img src="https://via.placeholder.com/1200x400/ffca28/ffffff?text=Impacto+Ambiental+Reduzido" alt="Impacto Ambiental Reduzido">
+        </div>
+    </div>
+</section>
+
+<!-- Parcerias -->
+<section id="parcerias">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h3 class="center-align">Nossas Parcerias</h3>
+                <p class="light center-align">Unimos forças com empresas líderes para assegurar a melhor destinação de resíduos e promover práticas sustentáveis.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Parallax (Imagem de fundo com efeito visual) -->
+<div class="parallax-container">
+    <div class="parallax"><img src="https://via.placeholder.com/1200x300" alt="Sustentabilidade e Parcerias"></div>
+</div>
+
+<!-- Principais Vantagens -->
+<section id="vantagens">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="icon-block center-align">
+                    <i class="material-icons large">eco</i>
+                    <h5>Benefícios Ambientais</h5>
+                    <p class="light">Reduzimos o impacto ambiental por meio de processos inovadores de reciclagem.</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="icon-block center-align">
+                    <i class="material-icons large">attach_money</i>
+                    <h5>Economia</h5>
+                    <p class="light">A gestão de resíduos eficiente ajuda a cortar custos operacionais.</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="icon-block center-align">
+                    <i class="material-icons large">gavel</i>
+                    <h5>Conformidade Legal</h5>
+                    <p class="light">Garantimos que sua empresa cumpra todas as leis ambientais vigentes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dificuldades na Gestão de Resíduos -->
+<section id="dificuldades">
+    <div class="container">
+        <h3 class="center-align">Dificuldades na Gestão de Resíduos</h3>
+        <p class="light center-align">Desafios como falta de conhecimento e planejamento inadequado ainda dificultam uma gestão eficiente dos resíduos em muitas empresas.</p>
+    </div>
+</section>
+
+<!-- Parallax -->
+<div class="parallax-container">
+    <div class="parallax"><img src="https://via.placeholder.com/1200x300" alt="Gestão de Resíduos Sustentável"></div>
+</div>
+
+<!-- Contato (Com botão para redirecionar para página de contato) -->
+<section id="contato">
+    <div class="container center-align">
+        <h3>Entre em Contato</h3>
+        <p class="light">Fale conosco e descubra como podemos ajudar na gestão sustentável dos resíduos da sua empresa.</p>
+        <a href="contato.php" class="btn btn-large btn-custom waves-effect">Formulário de Contato</a>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="center-align">
+    <p>&copy; 2024 Gestão de Resíduos. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Importando o JS do Materialize -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    // Inicializa o efeito parallax
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+    });
+
+    // Inicializa o carrossel com o tempo de rotação de 1 segundo (1000ms)
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, {
+            fullWidth: true,
+            indicators: true,
+            duration: 5000 // Tempo de rotação das imagens
+        });
+
+        // Função para automatizar a rotação do slide
+        setInterval(function() {
+            var elem = document.querySelector('.carousel');
+            var instance = M.Carousel.getInstance(elem);
+            instance.next();
+        }, 1500); // 1 segundo
+    });
+</script>
+
+</body>
+</html>
