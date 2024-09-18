@@ -6,53 +6,7 @@
     <title>Gestão de Resíduos - GIR</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        header {
-            background-color: #0288d1; /* Azul suave */
-            color: white;
-            padding: 50px 0;
-        }
-        section {
-            padding: 60px 0;
-        }
-        #slide {
-            padding: 0;
-        }
-        .carousel {
-            height: 400px;
-        }
-        .carousel .carousel-item {
-            width: 100%;
-        }
-        #parcerias, #vantagens, #dificuldades, #beneficios {
-            background-color: #e8f5e9; /* Verde claro */
-        }
-        footer {
-            background-color: #01579b; /* Azul escuro */
-            color: white;
-            padding: 20px 0;
-        }
-        .btn-custom {
-            background-color: #4caf50; /* Verde suave */
-        }
-        .parallax-container {
-            height: 300px;
-        }
-        .icon-block {
-            margin-top: 20px;
-        }
-        .card-title {
-            color: #4caf50;
-        }
-        @media only screen and (max-width: 600px) {
-            header {
-                padding: 20px 0;
-            }
-            .carousel .carousel-item {
-                height: 250px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
@@ -126,12 +80,59 @@
 </section>
 
 <!-- Dificuldades na Gestão de Resíduos -->
-<section id="dificuldades">
+<!-- Dificuldades (Problemas Atuais) -->
+<section id="problemas">
     <div class="container">
-        <h3 class="center-align"><i class="material-icons" style="color: #4caf50;">report_problem</i> Dificuldades na Gestão de Resíduos</h3>
-        <p class="light center-align">Desafios como falta de conhecimento e planejamento inadequado ainda dificultam uma gestão eficiente dos resíduos em muitas empresas.</p>
+        <h3 class="center-align"><i class="material-icons" style="color: #4caf50;">warning</i> Problemas Atuais que Nosso Sistema Soluciona</h3>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="icon-block center-align">
+                    <i class="material-icons large" style="color: #f44336;">block</i>
+                    <h5>Falta de Rastreamento</h5>
+                    <p class="light">Muitas empresas enfrentam dificuldades em rastrear o ciclo de vida dos resíduos gerados, desde a coleta até a destinação final.</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="icon-block center-align">
+                    <i class="material-icons large" style="color: #ff9800;">schedule</i>
+                    <h5>Gestão Ineficiente</h5>
+                    <p class="light">A gestão manual e não sistematizada causa ineficiências e aumenta os custos operacionais com desperdícios.</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="icon-block center-align">
+                    <i class="material-icons large" style="color: #9c27b0;">visibility_off</i>
+                    <h5>Falta de Transparência</h5>
+                    <p class="light">Há uma falta de visibilidade nos processos de reciclagem e destinação dos resíduos, o que dificulta o monitoramento e auditoria.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="icon-block center-align">
+                    <i class="material-icons large" style="color: #03a9f4;">trending_down</i>
+                    <h5>Impacto Ambiental Elevado</h5>
+                    <p class="light">O impacto ambiental negativo aumenta quando não há uma gestão otimizada dos resíduos.</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="icon-block center-align">
+                    <i class="material-icons large" style="color: #ffeb3b;">error_outline</i>
+                    <h5>Não Conformidade Legal</h5>
+                    <p class="light">Empresas podem estar em risco de penalidades devido à falta de conformidade com as regulamentações ambientais.</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="icon-block center-align">
+                    <i class="material-icons large" style="color: #8bc34a;">attach_money</i>
+                    <h5>Custos Elevados</h5>
+                    <p class="light">A falta de uma solução integrada aumenta os custos de gestão e destinação correta dos resíduos.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
 
 <!-- Benefícios -->
 <section id="beneficios">
@@ -202,25 +203,7 @@
 
 <!-- Importando o JS do Materialize -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.parallax');
-        var instances = M.Parallax.init(elems);
-
-        var elemsCarousel = document.querySelectorAll('.carousel');
-        var instancesCarousel = M.Carousel.init(elemsCarousel, {
-            fullWidth: true,
-            indicators: true,
-            duration: 1000 // Tempo de rotação das imagens
-        });
-
-        setInterval(function() {
-            var elem = document.querySelector('.carousel');
-            var instance = M.Carousel.getInstance(elem);
-            instance.next();
-        }, 4000); // 4 segundos
-    });
-</script>
+<script src="./js/script.js"></script>
 
 </body>
 </html>

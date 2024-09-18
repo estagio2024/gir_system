@@ -1,0 +1,45 @@
+header {
+    background-color: #0288d1; /* Azul suave */
+    color: white;
+    padding: 50px 0;
+}
+section {
+    padding: 60px 0;
+}
+#slide {
+    padding: 0;
+}
+.carousel {
+    height: 400px;
+}
+.carousel .carousel-item {
+    width: 100%;
+}
+#parcerias, #vantagens, #dificuldades, #beneficios {
+    background-color: #e8f5e9; /* Verde claro */
+}
+footer {
+    background-color: #01579b; /* Azul escuro */
+    color: white;
+    padding: 20px 0;
+}
+.btn-custom {
+    background-color: #4caf50; /* Verde suave */
+}
+.parallax-container {
+    height: 300px;
+}
+.icon-block {
+    margin-top: 20px;
+}
+.card-title {
+    color: #4caf50;
+}
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 20px 0;
+    }
+    .carousel .carousel-item {
+        height: 250px;
+    }
+}
