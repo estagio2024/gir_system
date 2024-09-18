@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestão de Resíduos</title>
-    <!-- Importando o MaterializeCSS -->
+    <title>Gestão de Resíduos - GIR</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-    <!-- Ícones do Google -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         header {
@@ -26,7 +24,7 @@
         .carousel .carousel-item {
             width: 100%;
         }
-        #parcerias, #vantagens, #dificuldades {
+        #parcerias, #vantagens, #dificuldades, #beneficios {
             background-color: #e8f5e9; /* Verde claro */
         }
         footer {
@@ -42,6 +40,9 @@
         }
         .icon-block {
             margin-top: 20px;
+        }
+        .card-title {
+            color: #4caf50;
         }
         @media only screen and (max-width: 600px) {
             header {
@@ -78,7 +79,7 @@
     </div>
 </section>
 
-<!-- Parcerias (Com ícones) -->
+<!-- Parcerias -->
 <section id="parcerias">
     <div class="container">
         <div class="row">
@@ -90,12 +91,12 @@
     </div>
 </section>
 
-<!-- Parallax (Imagem de fundo com efeito visual) -->
+<!-- Parallax -->
 <div class="parallax-container">
-    <div class="parallax"><img src="./parceiros.png" alt="Sustentabilidade e Parcerias"></div>
+    <div class="parallax"><img src="https://via.placeholder.com/1200x300" alt="Sustentabilidade e Parcerias"></div>
 </div>
 
-<!-- Principais Vantagens (Com ícones) -->
+<!-- Principais Vantagens -->
 <section id="vantagens">
     <div class="container">
         <div class="row">
@@ -124,7 +125,7 @@
     </div>
 </section>
 
-<!-- Dificuldades na Gestão de Resíduos (Com ícones) -->
+<!-- Dificuldades na Gestão de Resíduos -->
 <section id="dificuldades">
     <div class="container">
         <h3 class="center-align"><i class="material-icons" style="color: #4caf50;">report_problem</i> Dificuldades na Gestão de Resíduos</h3>
@@ -132,12 +133,60 @@
     </div>
 </section>
 
-<!-- Parallax -->
-<div class="parallax-container">
-    <div class="parallax"><img src="" alt="Gestão de Resíduos Sustentável"></div>
-</div>
+<!-- Benefícios -->
+<section id="beneficios">
+    <div class="container">
+        <h3 class="center-align"><i class="material-icons" style="color: #4caf50;">thumb_up</i> Benefícios da Gestão Inteligente de Resíduos</h3>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/500x300" alt="Benefício 1">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Redução de Desperdícios</span>
+                        <p>Implementar uma gestão eficaz reduz o desperdício e maximiza a eficiência operacional.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/500x300" alt="Benefício 2">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Melhoria da Imagem Corporativa</span>
+                        <p>Uma gestão sustentável melhora a imagem da empresa perante o público e investidores.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/500x300" alt="Benefício 3">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Inovação e Tecnologia</span>
+                        <p>A gestão de resíduos impulsiona a adoção de tecnologias inovadoras para processos mais eficientes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/500x300" alt="Benefício 4">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Sustentabilidade</span>
+                        <p>Contribui para um ambiente mais saudável, promovendo práticas que respeitam a natureza.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!-- Contato (Com botão para redirecionar para página de contato e ícone) -->
+<!-- Contato -->
 <section id="contato">
     <div class="container center-align">
         <h3><i class="material-icons">contact_mail</i> Entre em Contato</h3>
@@ -154,27 +203,22 @@
 <!-- Importando o JS do Materialize -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
-    // Inicializa o efeito parallax
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.parallax');
         var instances = M.Parallax.init(elems);
-    });
 
-    // Inicializa o carrossel com o tempo de rotação de 1 segundo (1000ms)
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.carousel');
-        var instances = M.Carousel.init(elems, {
+        var elemsCarousel = document.querySelectorAll('.carousel');
+        var instancesCarousel = M.Carousel.init(elemsCarousel, {
             fullWidth: true,
             indicators: true,
             duration: 1000 // Tempo de rotação das imagens
         });
 
-        // Função para automatizar a rotação do slide
         setInterval(function() {
             var elem = document.querySelector('.carousel');
             var instance = M.Carousel.getInstance(elem);
             instance.next();
-        }, 1000); // 1 segundo
+        }, 4000); // 4 segundos
     });
 </script>
 
