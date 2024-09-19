@@ -104,3 +104,15 @@ footer {
         transform: translateX(-1500px); /* Ajuste com base no número de itens e tamanho total */
     }
 }
+#imagens-sistema {
+    padding: 60px 0;
+    background-color: #f9f9f9; /* Um fundo claro para destacar as imagens */
+}
+
+#imagens-sistema .card {
+    transition: transform 0.2s ease;
+}
+
+#imagens-sistema .card:hover {
+    transform: scale(1.05);
+}
