@@ -46,3 +46,56 @@ footer {
 #onde-atuamos {
     background-color: #e8f5e9; /* Verde claro */
 }
+/* Estilo do carrossel */
+.carousel {
+    overflow: hidden;
+    width: 100%; /* Pode ajustar conforme o layout */
+    background-color: #f9f9f9; /* Cor de fundo da seção */
+    padding: 50px 0;
+}
+
+/* Contêiner com animação de deslizamento */
+.wrap {
+    display: flex;
+    animation: slide 30s linear infinite;
+}
+
+/* Estilo dos itens do carrossel */
+.wrap .item {
+    flex: 0 0 300px; /* Largura de cada item no carrossel */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo dos ícones */
+.wrap .material-icons {
+    font-size: 50px;
+    color: #4caf50;
+}
+
+/* Estilo dos títulos e textos */
+.wrap h5 {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.wrap p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Animação de deslizamento */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1500px); /* Ajuste com base no número de itens e tamanho total */
+    }
+}
