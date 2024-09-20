@@ -1,40 +1,60 @@
+body {
+    background-color: #121212; /* Fundo escuro */
+    color: #ffffff; /* Texto claro */
+}
+
 header {
-    background-color: #0288d1; /* Azul suave */
-    color: white;
+    background-color: #1f1f1f; /* Cabeçalho escuro */
+    color: #ffffff; /* Texto claro */
     padding: 50px 0;
 }
+
+#logo {
+    width: 60%;
+}
+
 section {
     padding: 60px 0;
 }
+
 #slide {
     padding: 0;
 }
+
 .carousel {
     height: 400px;
 }
+
 .carousel .carousel-item {
     width: 100%;
 }
+
 #parcerias, #vantagens, #dificuldades, #beneficios {
-    background-color: #e8f5e9; /* Verde claro */
+    background-color: #1f1f1f; /* Fundo das seções */
 }
+
 footer {
-    background-color: #01579b; /* Azul escuro */
-    color: white;
+    background-color: #0d0d0d; /* Fundo do rodapé */
+    color: #ffffff; /* Texto claro */
     padding: 20px 0;
 }
+
 .btn-custom {
     background-color: #4caf50; /* Verde suave */
 }
+
 .parallax-container {
     height: 300px;
 }
+
 .icon-block {
     margin-top: 20px;
 }
+
 .card-title {
     color: #4caf50;
 }
+
 @media only screen and (max-width: 600px) {
     header {
         padding: 20px 0;
@@ -43,6 +63,65 @@ footer {
         height: 250px;
     }
 }
+
 #onde-atuamos {
-    background-color: #e8f5e9; /* Verde claro */
+    background-color: #1f1f1f; /* Fundo das seções */
+}
+/* Estilo do carrossel */
+.carousel {
+    overflow: hidden;
+    width: 100%; /* Pode ajustar conforme o layout */
+    background-color: #969090; /* Cor de fundo da seção */
+    padding: 50px 0;
+}
+
+/* Contêiner com animação de deslizamento */
+.wrap {
+    display: flex;
+    animation: slide 30s linear infinite;
+}
+
+/* Estilo dos itens do carrossel */
+.wrap .item {
+    flex: 0 0 300px; /* Largura de cada item no carrossel */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.6s ease-in-out; /* Transição mais suave e lenta */
+}
+/* Efeito de aumento na escala ao passar o mouse */
+.wrap .item:hover {
+    transform: scale(1.1); /* Aumenta o item em 10% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para dar profundidade */
+}
+/* Estilo dos ícones */
+.wrap .material-icons {
+    font-size: 50px;
+    color: #4caf50;
+}
+
+/* Estilo dos títulos e textos */
+.wrap h5 {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.wrap p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Animação de deslizamento */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1500px); /* Ajuste com base no número de itens e tamanho total */
+    }
 }
