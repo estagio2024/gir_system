@@ -112,6 +112,7 @@ footer {
     margin-top: 10px;
     font-weight: bold;
     color: #ffffff; /* Texto claro */
+    text-align: justify; /*Justificar o texto*/
 }
 
 .wrap p {
@@ -202,3 +203,23 @@ footer {
 .social-links li a:hover {
     color: #4caf50; /* Cor ao passar o mouse */
 }
+
+    #beneficios .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #beneficios .card-image img {
+        height: 150px; 
+        object-fit: cover;
+    }
+
+    #beneficios .card-content {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    #beneficios .card {
+        padding: 10px;
+        margin: 10px 0;
+    }
