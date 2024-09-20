@@ -1,43 +1,60 @@
+body {
+    background-color: #121212; /* Fundo escuro */
+    color: #ffffff; /* Texto claro */
+}
+
 header {
-    background-color: #ffffff; /* Azul suave */
-    color: rgb(0, 0, 0);
+    background-color: #1f1f1f; /* Cabeçalho escuro */
+    color: #ffffff; /* Texto claro */
     padding: 50px 0;
 }
-#logo{
+
+#logo {
     width: 60%;
 }
+
 section {
     padding: 60px 0;
 }
+
 #slide {
     padding: 0;
 }
+
 .carousel {
     height: 400px;
 }
+
 .carousel .carousel-item {
     width: 100%;
 }
+
 #parcerias, #vantagens, #dificuldades, #beneficios {
-    background-color: #e8f5e9; /* Verde claro */
+    background-color: #1f1f1f; /* Fundo das seções */
 }
+
 footer {
-    background-color: #01579b; /* Azul escuro */
-    color: white;
+    background-color: #0d0d0d; /* Fundo do rodapé */
+    color: #ffffff; /* Texto claro */
     padding: 20px 0;
 }
+
 .btn-custom {
     background-color: #4caf50; /* Verde suave */
 }
+
 .parallax-container {
     height: 300px;
 }
+
 .icon-block {
     margin-top: 20px;
 }
+
 .card-title {
     color: #4caf50;
 }
+
 @media only screen and (max-width: 600px) {
     header {
         padding: 20px 0;
@@ -46,14 +63,16 @@ footer {
         height: 250px;
     }
 }
+
 #onde-atuamos {
-    background-color: #e8f5e9; /* Verde claro */
+    background-color: #1f1f1f; /* Fundo das seções */
 }
+
 /* Estilo do carrossel */
 .carousel {
     overflow: hidden;
     width: 100%; /* Pode ajustar conforme o layout */
-    background-color: #969090; /* Cor de fundo da seção */
+    background-color: #1f1f1f; /* Cor de fundo da seção */
     padding: 50px 0;
 }
 
@@ -66,19 +85,21 @@ footer {
 /* Estilo dos itens do carrossel */
 .wrap .item {
     flex: 0 0 300px; /* Largura de cada item no carrossel */
-    background-color: #ffffff;
+    background-color: #333333; /* Fundo dos itens */
     padding: 20px;
     border-radius: 15px;
     margin-right: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: transform 0.2s ease-in-out, box-shadow 0.6s ease-in-out; /* Transição mais suave e lenta */
 }
+
 /* Efeito de aumento na escala ao passar o mouse */
 .wrap .item:hover {
     transform: scale(1.1); /* Aumenta o item em 10% */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para dar profundidade */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra para dar profundidade */
 }
+
 /* Estilo dos ícones */
 .wrap .material-icons {
     font-size: 50px;
@@ -90,12 +111,12 @@ footer {
     font-size: 18px;
     margin-top: 10px;
     font-weight: bold;
-    color: #333;
+    color: #ffffff; /* Texto claro */
 }
 
 .wrap p {
     font-size: 14px;
-    color: #666;
+    color: #dddddd; /* Texto cinza claro */
 }
 
 /* Animação de deslizamento */
@@ -107,9 +128,10 @@ footer {
         transform: translateX(-1500px); /* Ajuste com base no número de itens e tamanho total */
     }
 }
+
 #imagens-sistema {
     padding: 60px 0;
-    background-color: #f9f9f9; /* Um fundo claro para destacar as imagens */
+    background-color: #1f1f1f; /* Fundo claro para destacar as imagens */
 }
 
 #imagens-sistema .card {
@@ -118,4 +140,65 @@ footer {
 
 #imagens-sistema .card:hover {
     transform: scale(1.05);
+}
+
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fixo na tela */
+    z-index: 1000; /* Acima de outros elementos */
+    left: 0; /* Alinha à esquerda */
+    top: 0; /* Alinha ao topo */
+    width: 100vw; /* 100% da largura da janela */
+    height: 100vh; /* 100% da altura da janela */
+    overflow: hidden; /* Sem rolagem */
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo preto com opacidade */
+}
+
+.modal-content {
+    display: block;
+    margin: auto; /* Centraliza a imagem */
+    width: auto; /* Largura automática */
+    height: auto; /* Altura automática */
+    max-width: 100%; /* Máximo de 100% da largura da tela */
+    max-height: 100%; /* Máximo de 100% da altura da tela */
+}
+
+.close {
+    position: absolute; /* Para posicionar o botão de fechar */
+    top: 20px; /* Distância do topo */
+    right: 40px; /* Distância da direita */
+    color: white; /* Cor do texto */
+    font-size: 40px; /* Tamanho do texto */
+    font-weight: bold; /* Peso do texto */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+/* Efeito de desfoque */
+#imagens-sistema {
+    transition: filter 0.3s;
+}
+
+.modal-open #imagens-sistema {
+    filter: blur(5px);
+}
+.social-links {
+    list-style-type: none; /* Remove os marcadores */
+    padding: 0; /* Remove o padding */
+    margin: 0; /* Remove a margem */
+    display: flex; /* Alinha os itens em linha */
+    justify-content: flex-end; /* Alinha à direita */
+}
+
+.social-links li {
+    margin: 0 10px; /* Espaçamento entre os links */
+}
+
+.social-links li a {
+    color: white; /* Cor dos links */
+    font-size: 24px; /* Tamanho do ícone */
+    transition: color 0.3s; /* Efeito de transição */
+}
+
+.social-links li a:hover {
+    color: #4caf50; /* Cor ao passar o mouse */
 }
