@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #1f1f1f; /* Cabeçalho escuro */
+    background-color: #000000; /* Cabeçalho escuro */
     color: #ffffff; /* Texto claro */
     padding: 50px 0;
 }
