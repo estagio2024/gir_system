@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestão de Resíduos - GIR</title>
+    <title>GI-RESÍDUOS</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
 <!-- Cabeçalho -->
 <header>
-    <div class="container center-align">
-        <img id="logo" src="./imgs/logo-dark.png" alt="">
-        <h5>Transforme sua gestão de resíduos em vantagem competitiva.</h5>
+    <div>
+        <img id="logo" src="./imgs/logo-sem-fundo.png" alt="">
+        <h5>Transforme a sua gestão de resíduos em vantagem competitiva.</h5>
     </div>
 </header>
 
-<!-- Slide de Imagens -->
+<!-- Slide de Imagens 
 <section id="slide">
     <div class="carousel carousel-slider center">
         <div class="carousel-item" href="#one!">
@@ -31,7 +32,7 @@
             <img src="https://via.placeholder.com/1200x400/ffca28/ffffff?text=Impacto+Ambiental+Reduzido" alt="Impacto Ambiental Reduzido">
         </div>
     </div>
-</section>
+</section> -->
 <!-- Onde Atuamos -->
 <section id="onde-atuamos">
     <div class="container">
@@ -42,22 +43,23 @@
             <div class="col s12 m4">
                 <div class="icon-block center-align">
                     <i class="material-icons large" style="color: #4caf50;">business</i>
-                    <h5>Indústria</h5>
-                    <p class="light">Oferecemos soluções específicas para empresas do setor industrial, garantindo eficiência na gestão de resíduos.</p>
+                    <h5>Empresas com Potencial Geração de Resíduos</h5>
+                    <p class="light" style="text-align: justify;">
+                        Soluções para otimizar a gestão de resíduos, garantindo sustentabilidade, conformidade ambiental e eficiência no descarte e reciclagem dos resíduos sólidos do seu empreendimento.</p>
                 </div>
             </div>
             <div class="col s12 m4">
                 <div class="icon-block center-align">
                     <i class="material-icons large" style="color: #4caf50;">store</i>
-                    <h5>Cooperativas e Assossiações</h5>
-                    <p class="light">Fortalecemos as cooperativas e assossiações com ferramentas que facilitam a gestão e rastreabilidade dos resíduos, promovendo maior eficiência e geração de valor para os cooperados.</p>
+                    <h5>Cooperativas e Assossiações de Catadores</h5>
+                    <p class="light" style="text-align: justify;">Fortalecemos as cooperativas e assossiações com ferramentas que facilitam a gestão e rastreabilidade dos resíduos, promovendo maior eficiência e geração de valor para os cooperados.</p>
                 </div>
             </div>
             <div class="col s12 m4">
                 <div class="icon-block center-align">
                     <i class="material-icons large" style="color: #4caf50;">location_city</i>
                     <h5>Municípios</h5>
-                    <p class="light">Oferecemos suporte aos municípios na implementação do GI-RESÍDUOS, oferecendo uma solução que garante a fiscalização e comuninicação com as empresas, melhorando as ações do ógão público e aumentando a sustentabilidade local.</p>
+                    <p class="light" style="text-align: justify;">Oferecemos suporte aos municípios na implementação do GI-RESÍDUOS, oferecendo uma solução que garante a fiscalização e comuninicação com as empresas, melhorando as ações do ógão público e aumentando a sustentabilidade local.</p>
                 </div>
             </div>
         </div>
@@ -65,6 +67,43 @@
 
     </div>
 </section>
+
+<!-- Imagens do Sistema -->
+<section id="imagens-sistema">
+    <div class="container">
+        <h3 class="center-align"><i class="material-icons" style="color: #4caf50;">photo</i>O Nosso Sistema</h3>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./imgs/sistema/inicial-1.png" alt="Imagem do Sistema 1">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Interface do Usuário</span>
+                        <p>Visualização intuitiva das operações de gestão de resíduos.</p>
+                    </div>
+                </div>
+            </div>
+         
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./imgs/sistema/solicitacoes.png" alt="Imagem do Sistema 3">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Dashboard de Controle</span>
+                        <p>Monitoramento em tempo real das operações e indicadores.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- Modal para imagem ampliada -->
+<div id="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img" src="" alt="">
+</div>
 
 
 <section id="vantagens">
@@ -97,7 +136,7 @@
                 <p>Garantimos que sua empresa cumpra todas as leis ambientais vigentes.</p>
             </div>
             <div class="item">
-                <i class="material-icons large" style="color: #4caf50;">perm_data_setting</i>
+                <i class="material-icons large">perm_data_setting</i>
                 <h5>Dashboard</h5>
                 <p class="light">Dashboard intuitivos colaborando com a tomada de decisões</p>
             </div>
@@ -128,7 +167,7 @@
                 <p>Garantimos que sua empresa cumpra todas as leis ambientais vigentes.</p>
             </div>
             <div class="item">
-                <i class="material-icons large" style="color: #4caf50;">perm_data_setting</i>
+                <i class="material-icons large">perm_data_setting</i>
                 <h5>Dashboard</h5>
                 <p class="light">Dashboard intuitivos colaborando com a tomada de decisões</p>
             </div>
@@ -138,12 +177,10 @@
 </section>
 
 
-
-<!-- Dificuldades na Gestão de Resíduos -->
 <!-- Dificuldades (Problemas Atuais) -->
 <section id="problemas">
     <div class="container">
-        <h3 class="center-align"><i class="material-icons" style="color: #4caf50;">warning</i>PROBELMAS QUE O GI-RESÍDUOS SOLUCIONA</h3>
+        <h3 class="center-align"><i class="material-icons" style="color: #4caf50;">warning</i> Problemas que o GI-RESÍDUOS Soluciona</h3>
         <div class="row">
             <div class="col s12 m4">
                 <div class="icon-block center-align">
@@ -202,7 +239,7 @@
             <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image">
-                        <img src="./imgs/img1.JPG" alt="Benefício 1">
+                        <img src="./imgs/imagens/IMG_2181.JPG" alt="Benefício 1">
                     </div>
                     <div class="card-content">
                         <span class="card-title">Redução de Desperdícios</span>
@@ -213,7 +250,7 @@
             <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image">
-                        <img src="./imgs/img2.JPG" alt="Benefício 2">
+                        <img src="./imgs/imagens/IMG_2182.JPG" alt="Benefício 2">
                     </div>
                     <div class="card-content">
                         <span class="card-title">Melhoria da Imagem Corporativa</span>
@@ -224,7 +261,7 @@
             <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image">
-                        <img src="./imgs/img3.JPG" alt="Benefício 3">
+                        <img src="./imgs/imagens/IMG_2185.JPG" alt="Benefício 3">
                     </div>
                     <div class="card-content">
                         <span class="card-title">Inovação e Tecnologia</span>
@@ -235,7 +272,7 @@
             <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image">
-                        <img src="./imgs/img4.JPG" alt="Benefício 4">
+                        <img src="./imgs/imagens/IMG_2179.JPG" alt="Benefício 4">
                     </div>
                     <div class="card-content">
                         <span class="card-title">Sustentabilidade</span>
@@ -246,43 +283,6 @@
         </div>
     </div>
 </section>
-<!-- Imagens do Sistema -->
-<section id="imagens-sistema">
-    <div class="container">
-        <h3 class="center-align"><i class="material-icons" style="color: #4caf50;">photo</i> Imagens do Sistema</h3>
-        <div class="row">
-            <div class="col s12 m6">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./imgs/sistema/inicial-1.png" alt="Imagem do Sistema 1">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Interface do Usuário</span>
-                        <p>Visualização intuitiva das operações de gestão de resíduos.</p>
-                    </div>
-                </div>
-            </div>
-         
-            <div class="col s12 m6">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./imgs/sistema/solicitacoes.png" alt="Imagem do Sistema 3">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Dashboard de Controle</span>
-                        <p>Monitoramento em tempo real das operações e indicadores.</p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-<!-- Modal para imagem ampliada -->
-<div id="modal" class="modal">
-    <span class="close" id="close">&times;</span>
-    <img class="modal-content" id="modalImg" alt="">
-</div>
 
 
 <!-- Contato -->
@@ -298,42 +298,40 @@
 <footer class="page-footer grey darken-4">
     <div class="container">
         <div class="row center-align">
-            <div class="col s12 m6">
-                <img src="./imgs/logo-dark.png" alt="Logo da Empresa" style="max-width: 120px;">
+            <div class="col s12 m4"> 
+                <span class="white-text">© 2024 GIR - Todos os direitos reservados.</span>
             </div>
-            <div class="col s12 m6">
+            <div class="col s12 m4">
+                <img src="./imgs/logo-sem-fundo.png" alt="Logo da Empresa" style="max-width: 120px;">
+            </div>
+            <div class="col s12 m4">
                 <ul class="social-links">
                     <li>
                         <a class="white-text" href="https://www.instagram.com" target="_blank">
-                            <i class="material-icons">camera_alt</i>
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </li>
                     <li>
                         <a class="white-text" href="https://www.youtube.com" target="_blank">
-                            <i class="material-icons">ondemand_video</i>
+                            <i class="fab fa-youtube"></i>
                         </a>
                     </li>
                     <li>
                         <a class="white-text" href="https://www.linkedin.com" target="_blank">
-                            <i class="material-icons">business_center</i>
+                            <i class="fab fa-linkedin"></i>
                         </a>
                     </li>
                     <li>
                         <a class="white-text" href="https://wa.me/5511999999999" target="_blank">
-                            <i class="material-icons">chat</i>
+                            <i class="fab fa-whatsapp"></i>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="footer-copyright grey darken-5">
-        <div class="container center-align">
-            <span class="white-text">© 2024 Nome da Empresa - Todos os direitos reservados.</span>
-        </div>
-    </div>
 </footer>
-  
+
 <!-- Importando o JS do Materialize -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="./js/script.js"></script>
