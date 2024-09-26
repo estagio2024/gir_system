@@ -161,7 +161,25 @@ footer {
 #lightbox {
     display: none; /* Começa escondido */
     position: fixed;
-    top: 0;
+    top: 0;.wrap h5 {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff; /* Texto claro */
+    text-align: justify; /* Justificar o texto */
+}
+
+.wrap p {
+    font-size: 14px;
+    color: #dddddd; /* Texto cinza claro */
+    text-align: justify; /* Justificar o texto */
+}
+
+#beneficios .card-content {
+    font-size: 0.9rem;
+    padding: 10px;
+    text-align: justify; /* Justificar o texto */
+}
     left: 0;
     width: 100%;
     height: 100%;
@@ -217,4 +235,23 @@ footer {
 #beneficios .card {
     padding: 10px;
     margin: 10px 0;
+}
+.wrap h5 {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff; /* Texto claro */
+    text-align: justify; /* Justificar o texto */
+}
+
+.wrap p {
+    font-size: 14px;
+    color: #dddddd; /* Texto cinza claro */
+    text-align: justify; /* Justificar o texto */
+}
+
+#beneficios .card-content {
+    font-size: 0.9rem;
+    padding: 10px;
+    text-align: justify; /* Justificar o texto */
 }
