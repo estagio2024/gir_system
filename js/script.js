@@ -29,3 +29,20 @@ images.forEach(img => {
     });
 });
 
+let currentTranslateX = 0;
+const itemWidth = 320; // Largura do item (300px) + margem (20px)
+const maxMove = -itemWidth * (document.querySelectorAll('.wrap .item').length / 2); // Metade dos itens
+
+function moveLeft() {
+    if (currentTranslateX < 0) {
+        currentTranslateX += itemWidth;
+        document.querySelector('.wrap').style.transform = `translateX(${currentTranslateX}px)`;
+    }
+}
+
+function moveRight() {
+    if (currentTranslateX > maxMove) {
+        currentTranslateX -= itemWidth;
+        document.querySelector('.wrap').style.transform = `translateX(${currentTranslateX}px)`;
+    }
+}
