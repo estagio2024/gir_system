@@ -130,34 +130,30 @@ footer {
 
 /* Setas de navegação */
 .arrow {
+    opacity: 0.3;
     position: absolute;
     top: 45%;
+    width: 8%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    outline: none; /* Remove a borda de foco padrão */
-    border-radius: 45%;
     cursor: pointer;
     z-index: 10;
+    transition: opacity 0.3s ease;
 }
+.arrow:hover{
+    opacity: 1;
+}
+@media only screen and (max-width: 600px) {
+    .arrow {
+        width: 20%;
+    }
 
-.arrow:focus {
-background-color: rgba(0, 0, 0, 0.473);
-}
-
-.arrow:active {
-outline: none; /* Remove qualquer foco quando estiver ativo */
-background-color: rgba(92, 92, 92, 0); /* Opcional: altera a cor ao clicar */
-}
-.arrow:focus-visible {
-    outline: none;
 }
 .arrow.left {
     left: 10px;
 }
 
 .arrow.right {
-    right: 10px;
+    right: 15px;
 }
 
 
