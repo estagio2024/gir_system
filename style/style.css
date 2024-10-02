@@ -128,7 +128,9 @@ footer {
     font-size: 14px;
     color: #dddddd;
 }
-
+#center{
+    font-size: 1.70em;
+}
 /* Setas de navegação */
 .arrow {
     opacity: 0.3;
@@ -157,7 +159,9 @@ footer {
 .arrow.right {
     right: 15px;
 }
-
+.row{
+    margin-left: 20px;
+}
 
 #imagens-sistema {
     padding: 60px 0;
