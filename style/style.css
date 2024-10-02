@@ -139,6 +139,7 @@ footer {
     cursor: pointer;
     z-index: 10;
     transition: opacity 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(40%); 
 }
 .arrow:hover{
     opacity: 1;
