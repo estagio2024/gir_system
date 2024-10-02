@@ -88,7 +88,7 @@ footer {
 .wrap {
     display: flex;
     transition: transform 0.5s ease-in-out; /* Transição suave ao deslizar */
-    padding-left: 60px;
+    padding-left: 55px;
 }
 
 /* Estilo dos itens do carrossel */
@@ -316,4 +316,7 @@ footer {
     font-size: 0.9rem;
     padding: 10px;
     text-align: justify; /* Justificar o texto */
+}
+.light{
+    text-align: justify;
 }
