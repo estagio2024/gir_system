@@ -93,7 +93,7 @@ footer {
 .wrap {
     display: flex;
     transition: transform 0.5s ease-in-out; /* Transição suave ao deslizar */
-    padding-left: 55px;
+    padding-left: 50px;
 }
 
 /* Estilo dos itens do carrossel */
