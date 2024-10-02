@@ -213,13 +213,12 @@ footer {
     max-width: 90%;
     max-height: 90%;
 }
-
 .social-links {
     list-style-type: none; /* Remove os marcadores */
     padding: 0; /* Remove o padding */
     margin: 0; /* Remove a margem */
     display: flex; /* Alinha os itens em linha */
-    justify-content: flex-end; /* Alinha à direita */
+    justify-content: center; /* Centraliza os links */
 }
 
 .social-links li {
@@ -234,6 +233,13 @@ footer {
 
 .social-links li a:hover {
     color: #4caf50; /* Cor ao passar o mouse */
+}
+
+/* Ajustes para mobile */
+@media only screen and (max-width: 600px) {
+    .social-links {
+        justify-content: center; /* Centraliza os links no mobile */
+    }
 }
 
 #beneficios .card {
