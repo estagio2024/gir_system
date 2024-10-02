@@ -12,7 +12,9 @@ header {
     color: #ffffff; /* Texto claro */
     padding: 90px 0;
 }
-
+img{
+    outline: none;
+}
 #logo {
     margin-left: 10px;
     width: 30%;
