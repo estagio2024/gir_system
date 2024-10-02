@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>girIA</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #chat { max-width: 600px; margin: auto; }
+        #messages { border: 1px solid #ccc; padding: 10px; height: 300px; overflow-y: scroll; }
+        #user_input { width: calc(100% - 100px); }
+        #send { width: 80px; }
+    </style>
+</head>
+<body>
+    <div id="chat">
+        <h1>girIA Chat</h1>
+        <div id="messages"></div>
+        <input type="text" id="user_input" placeholder="Digite sua mensagem...">
+        <button id="send">Enviar</button>
+    </div>
+
+    <script>
+        document.getElementById('send').onclick = function() {
+            const userInput = document.getElementById('user_input').value;
+            fetch('/ask', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: `user_input=${encodeURIComponent(userInput)}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                const messagesDiv = document.getElementById('messages');
+                messagesDiv.innerHTML += `<p><strong>Você:</strong> ${userInput}</p>`;
+                messagesDiv.innerHTML += `<p><strong>girIA:</strong> ${data.response}</p>`;
+                document.getElementById('user_input').value = '';
+                messagesDiv.scrollTop = messagesDiv.scrollHeight;  // Rolagem automática
+            });
+        };
+    </script>
+</body>
+</html>
