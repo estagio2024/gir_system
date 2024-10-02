@@ -213,12 +213,32 @@ footer {
     max-width: 90%;
     max-height: 90%;
 }
+/* Estilos gerais do rodapé */
+.page-footer {
+    padding: 10px 0; /* Reduz o espaçamento vertical do rodapé */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/* Reduzir ainda mais o espaçamento nas colunas */
+.footer-logo, .footer-rights, .footer-social {
+    padding: 0; /* Remove o padding extra */
+    margin: 0;
+}
+
+/* Links Sociais Inline (sempre em linha) */
 .social-links {
     list-style-type: none; /* Remove os marcadores */
-    padding: 0; /* Remove o padding */
-    margin: 0; /* Remove a margem */
-    display: flex; /* Alinha os itens em linha */
-    justify-content: center; /* Centraliza os links */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinha os links em linha */
+    justify-content: flex-end; /* Alinha à direita */
+    align-items: center;
 }
 
 .social-links li {
@@ -237,10 +257,17 @@ footer {
 
 /* Ajustes para mobile */
 @media only screen and (max-width: 600px) {
+    .footer-content {
+        display: block;
+        text-align: center;
+    }
+
     .social-links {
         justify-content: center; /* Centraliza os links no mobile */
     }
 }
+
+
 
 #beneficios .card {
     width: 90%;
