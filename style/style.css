@@ -133,7 +133,7 @@ footer {
 }
 /* Setas de navegação */
 .arrow {
-    opacity: 0.3;
+    opacity: 0.4;
     position: absolute;
     top: 45%;
     width: 8%;
@@ -149,6 +149,9 @@ footer {
 @media only screen and (max-width: 600px) {
     .arrow {
         width: 15%;
+    }
+    .arrow:hover{
+        opacity: 0.3;
     }
     .arrow.left {
         left: 1px;
