@@ -12,7 +12,10 @@ header {
     color: #ffffff; /* Texto claro */
     padding: 90px 0;
 }
-img{
+img:focus{
+    outline: none;
+}
+img:active{
     outline: none;
 }
 #logo {
