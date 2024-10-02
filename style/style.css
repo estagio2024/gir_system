@@ -331,8 +331,3 @@ footer {
 .light{
     text-align: justify;
 }
-
-.disabled {
-    pointer-events: none; /* Desativa eventos de clique */
-    opacity: 0.5; /* Diminui a opacidade para indicar que está desativado */
-}
