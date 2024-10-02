@@ -75,36 +75,37 @@ footer {
     background-color: #1f1f1f; /* Fundo das seções */
 }
 
-/* Estilo do carrossel */
+/* Carrossel */
 .carousel {
     overflow: hidden;
-    width: 100%; /* Pode ajustar conforme o layout */
-    background-color: #1f1f1f; /* Cor de fundo da seção */
+    width: 100%;
+    background-color: #1f1f1f;
     padding: 50px 0;
+    position: relative; /* Para posicionar as setas */
 }
 
-/* Contêiner com animação de deslizamento */
+/* Contêiner com deslizamento */
 .wrap {
     display: flex;
-    animation: slide 30s linear infinite;
+    transition: transform 0.5s ease-in-out; /* Transição suave ao deslizar */
 }
 
 /* Estilo dos itens do carrossel */
 .wrap .item {
     flex: 0 0 300px; /* Largura de cada item no carrossel */
-    background-color: #333333; /* Fundo dos itens */
+    background-color: #333333;
     padding: 20px;
     border-radius: 15px;
     margin-right: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transition: transform 0.2s ease-in-out, box-shadow 0.6s ease-in-out; /* Transição mais suave e lenta */
+    transition: transform 0.2s ease-in-out, box-shadow 0.6s ease-in-out;
 }
 
 /* Efeito de aumento na escala ao passar o mouse */
 .wrap .item:hover {
-    transform: scale(1.1); /* Aumenta o item em 10% */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra para dar profundidade */
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilo dos ícones */
@@ -118,24 +119,47 @@ footer {
     font-size: 18px;
     margin-top: 10px;
     font-weight: bold;
-    color: #ffffff; /* Texto claro */
-    text-align: justify; /*Justificar o texto*/
+    color: #ffffff;
+    text-align: justify;
 }
 
 .wrap p {
     font-size: 14px;
-    color: #dddddd; /* Texto cinza claro */
+    color: #dddddd;
 }
 
-/* Animação de deslizamento */
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-1500px); /* Ajuste com base no número de itens e tamanho total */
-    }
+/* Setas de navegação */
+.arrow {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none; /* Remove a borda de foco padrão */
+    border-radius: 45%;
+    cursor: pointer;
+    z-index: 10;
 }
+
+.arrow:focus {
+background-color: rgba(0, 0, 0, 0.473);
+}
+
+.arrow:active {
+outline: none; /* Remove qualquer foco quando estiver ativo */
+background-color: rgba(92, 92, 92, 0); /* Opcional: altera a cor ao clicar */
+}
+.arrow:focus-visible {
+    outline: none;
+}
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
 
 #imagens-sistema {
     padding: 60px 0;
