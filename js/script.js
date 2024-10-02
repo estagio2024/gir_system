@@ -43,10 +43,26 @@ function moveLeft() {
         wrap.style.transform = `translateX(${currentTranslateX}px)`;
     }
 }
-
 function moveRight() {
+    const button = document.querySelector('.arrow.right');
+    button.classList.add('disabled'); // Adiciona a classe disabled ao botão
+
+    // Move o carrossel
     if (currentTranslateX > maxMove) {
         currentTranslateX -= itemWidth;
         wrap.style.transform = `translateX(${currentTranslateX}px)`;
     }
+
+    // Remove a classe disabled após 1 segundo (ou outro tempo que você desejar)
+    setTimeout(() => {
+        button.classList.remove('disabled');
+    }, 1000); // 1 segundo
 }
+
+// Adiciona um listener para remover a classe ao clicar fora
+document.addEventListener('click', function(event) {
+    const button = document.querySelector('.arrow.right');
+    if (!button.contains(event.target)) {
+        button.classList.remove('disabled');
+    }
+});
