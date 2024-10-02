@@ -148,9 +148,15 @@ footer {
 }
 @media only screen and (max-width: 600px) {
     .arrow {
-        width: 20%;
+        width: 15%;
     }
-
+    .arrow.left {
+        left: 1px;
+    }
+    
+    .arrow.right {
+        right: 1px;
+    }
 }
 .arrow.left {
     left: 10px;
