@@ -50,3 +50,21 @@ function moveRight() {
         wrap.style.transform = `translateX(${currentTranslateX}px)`;
     }
 }
+document.addEventListener('DOMContentLoaded', function() {
+    // Função para verificar o tamanho da tela
+    function checkWindowSize() {
+        var divTeste = document.getElementById('teste');
+
+        if (window.innerWidth <= 768) { // Largura típica de dispositivos móveis
+            divTeste.classList.add('center'); // Adiciona a classe 'center'
+        } else {
+            divTeste.classList.remove('center'); // Remove a classe 'center' em telas maiores
+        }
+    }
+
+    // Verifica o tamanho da tela ao carregar a página
+    checkWindowSize();
+
+    // Verifica novamente quando a janela é redimensionada
+    window.addEventListener('resize', checkWindowSize);
+});

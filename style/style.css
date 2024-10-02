@@ -10,21 +10,38 @@ header {
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     background-color: #000000; /* Cabeçalho escuro */
     color: #ffffff; /* Texto claro */
-    padding: 90px 0;
+    height: 400px; /* Aumenta a altura do header */
+    padding-top: 50px; /* Espaçamento superior */
+    padding-bottom: 50px; /* Espaçamento inferior */
+    padding-left: 25px;
 }
-img:focus{
+
+img:focus, img:active {
     outline: none;
 }
-img:active{
-    outline: none;
-}
+
 #logo {
-    margin-left: 10px;
     width: 30%;
 }
-header h5{
-    margin-left: 10px;
+
+.teste-gratuito{
+    text-decoration: none;
+    margin-top:50px;
+    padding: 15px;
+    border: 0.2px solid #2a9c20;
+    border-radius: 8px;
+    background-color: #2a9c20;
+    color: white;
+    display: inline-block;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease, scale 0.3s ease;
 }
+.teste-gratuito:hover{
+    background-color: #2eb329;
+    color: #d8f8cd;
+    scale: 1.1;
+}
+
 section {
     padding: 60px 0;
 }
@@ -68,8 +85,19 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+
+    #logo{
+        width: 50%;
+      }  
     header {
-        padding: 20px 0;
+        height: 300px;
+    }
+    .teste-gratuito{
+        scale: 0.8;
+        margin-top: 20px;
+    }
+    .teste-gratuito:hover{
+        scale: 0.95;
     }
     .carousel .carousel-item {
         height: 250px;
