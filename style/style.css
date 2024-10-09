@@ -388,7 +388,7 @@ footer {
 }
 
     /* Garante que todos os cards tenham a mesma altura */
-    .card-custom {
+    #funcoes .card-custom {
     position: relative;
     overflow: hidden;
     height: 300px;
@@ -401,7 +401,7 @@ footer {
     }
 
 
-    .card-image img {
+    #funcoes .card-image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -409,7 +409,7 @@ footer {
     opacity: 0.6;
     }
 
-    .card-title.text-func {
+    #funcoes .card-title.text-func {
     text-align: center;
     position: absolute;
     top: 10px;
@@ -421,7 +421,7 @@ footer {
     transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
-    .funcs {  
+    #funcoes .funcs {  
     position: absolute;
     color: #50bd25;
     bottom: 10px;
@@ -431,20 +431,20 @@ footer {
     transition: opacity 0.3s ease;
     }
 
-    .card:hover .text-func {
+    #funcoes .card:hover .text-func {
     transform: scale(1.1) translateY(50px);
     opacity: 1;
     }
 
-    .card:hover .card-content {
+    #funcoes card:hover .card-content {
     opacity: 1;
     }
 
-    .card:hover .card-image img {
+    #funcoes .card:hover .card-image img {
     transform: scale(1.05);
     opacity: 0.3;
     }
-    .bold {
+    #funcoes .bold {
         font-weight: bold;
     }
     
