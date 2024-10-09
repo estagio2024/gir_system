@@ -409,7 +409,7 @@ footer {
     opacity: 0.6;
     }
 
-    #funcoes .card-title.text-func {
+    #funcoes  .card-title.text-func {
     text-align: center;
     position: absolute;
     top: 10px;
@@ -436,7 +436,7 @@ footer {
     opacity: 1;
     }
 
-    #funcoes card:hover .card-content {
+    #funcoes .card:hover .card-content {
     opacity: 1;
     }
 
