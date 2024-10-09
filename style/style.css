@@ -114,7 +114,8 @@ footer {
     overflow: hidden;
     width: 100%;
     background-color: #1f1f1f;
-    padding: 50px 0;
+    padding-bottom: 500px;
+    padding-top: 50px;
     position: relative; /* Para posicionar as setas */
 }
 
@@ -123,11 +124,12 @@ footer {
     display: flex;
     transition: transform 0.5s ease-in-out; /* Transição suave ao deslizar */
     padding-left: 50px;
+    margin-bottom: 20px;
 }
 
 /* Estilo dos itens do carrossel */
 .wrap .item {
-    flex: 0 0 300px; /* Largura de cada item no carrossel */
+    width: 30% ; /* Largura de cada item no carrossel */
     background-color: #333333;
     padding: 20px;
     border-radius: 15px;
@@ -150,12 +152,12 @@ footer {
 }
 
 /* Estilo dos títulos e textos */
-.wrap h5 {
+.wrap .item h5 {
     font-size: 18px;
     margin-top: 10px;
     font-weight: bold;
     color: #ffffff;
-    text-align: justify;
+    text-align: center;
 }
 
 .wrap p {
@@ -165,39 +167,8 @@ footer {
 #center{
     font-size: 1.70em;
 }
-/* Setas de navegação */
-.arrow {
-    opacity: 0.4;
-    position: absolute;
-    top: 45%;
-    width: 8%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 10;
-    transition: opacity 0.3s ease;
-    filter: brightness(0) saturate(100%) invert(40%); 
-}
-.arrow:hover{
-    opacity: 1;
-}
-@media only screen and (max-width: 600px) {
-    .arrow {
-        width: 15%;
-    }
-    .arrow:hover{
-        opacity: 0.3;
-    }
-    .arrow.left {
-        left: 1px;
-    }
-    
-    .arrow.right {
-        right: 1px;
-    }
-}
-.arrow.left {
-    left: 10px;
-}
+
+
 
 .arrow.right {
     right: 15px;
