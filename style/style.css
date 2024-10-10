@@ -131,7 +131,7 @@ footer {
 .wrap .item {
     background-color: #333333;
     padding: 20px;
-    margin: 20px;
+
     border-radius: 15px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -170,6 +170,7 @@ footer {
 @media (min-width: 768px) {
     .wrap .item {
         width: 30%; /* Grid com 3 colunas no desktop */
+        margin: 20px;
 
     }
 
