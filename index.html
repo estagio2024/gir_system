@@ -20,10 +20,11 @@
             <a href=""  class="teste-gratuito">SOLICITAR TESTE GRATUITO</a>
         </div>
 </header>
-<button id="theme-toggle" class="btn btn-custom">Alternar Tema</button>
 
 
-<!-- Slide de Imagens 
+
+<!-- Slide de Imagens   
+ <button id="theme-toggle" class="btn btn-custom">Alternar Tema</button>
 <section id="slide">
     <div class="carousel carousel-slider center">
         <div class="carousel-item" href="#one!">
@@ -326,14 +327,16 @@
 <footer class="page-footer grey darken-4">
     <div class="container">
         <div class="row footer-content">
-            <!-- Logo -->
-            <div class="col s12 footer-logo">
-                <img src="./imgs/logo-sem-fundo.png" alt="Logo da Empresa" style="max-width: 120px;">
-            </div>
+
 
             <!-- Texto de Direitos Reservados -->
             <div class="col s12 footer-rights">
                 <span class="white-text">© 2024 GIR - Todos os direitos reservados.</span>
+            </div>
+
+            <!-- Logo -->
+            <div class="col s12 footer-logo">
+                <img src="./imgs/logo-sem-fundo.png" alt="Logo da Empresa" style="max-width: 120px;">
             </div>
 
             <!-- Links Sociais -->
@@ -372,6 +375,7 @@
 <script>
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
+    body.classList.add('dark-theme');
   
     // Carregar o tema salvo no localStorage
     const savedTheme = localStorage.getItem('theme');
