@@ -17,6 +17,7 @@ header {
     text-align: center;
 }
 
+
 img:focus, img:active {
     outline: none;
 }
@@ -83,6 +84,7 @@ footer {
 }
 
 .card-title {
+    white-space: nowrap;
     color: #4caf50;
 }
 
@@ -204,6 +206,12 @@ footer {
 /* Efeito de desfoque */
 #imagens-sistema {
     transition: filter 0.3s;
+}
+#imagens-sistema .card{
+    transition: 0.4s ease scale;
+}
+#imagens-sistema .card:hover{
+    scale: 1.05;
 }
 /* Estilo para a imagem ampliada */
 #lightbox {
