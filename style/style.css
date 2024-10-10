@@ -107,9 +107,7 @@ footer {
     }
 }
 
-#onde-atuamos {
-    background-color: #1f1f1f; /* Fundo das seções */
-}
+
 
 /* Estilo padrão para o carrossel */
 .carousel {
@@ -131,19 +129,19 @@ footer {
 .wrap .item {
     background-color: #333333;
     padding: 20px;
-
     border-radius: 15px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: transform 0.2s ease-in-out, box-shadow 0.6s ease-in-out;
     width: 90%; /* Por padrão, cada item ocupa 100% da largura */
+    transition: box-shadow 0.3s ease;
 }
 
 /* Efeito de hover */
 .wrap .item:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 15px rgba(0, 255, 0, 0.7); /* sombra verde */
 }
 
 /* Ícones */
@@ -196,8 +194,7 @@ footer {
     transition: transform 0.2s ease;
     color: #000000;
 }
-
-#imagens-sistema .card:hover {
+ gens-sistema .card:hover {
     transform: scale(1.05);
 }
 
