@@ -5,7 +5,7 @@ body.light-theme {
   }
 
 
-  .light-theme #onde-atuamos,.light-theme #imagens-sistema, .light-theme .carousel {
+ .light-theme #vantagens, .light-theme #onde-atuamos,.light-theme #imagens-sistema, .light-theme .carousel, .light-theme #beneficios {
       background-color: #ffffff; /* Fundo das seções */
   }
 
