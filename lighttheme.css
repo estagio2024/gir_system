@@ -1,0 +1,49 @@
+/* Estilos para o tema claro */
+body.light-theme {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+
+  .light-theme #onde-atuamos,.light-theme #imagens-sistema, .light-theme .carousel {
+      background-color: #ffffff; /* Fundo das seções */
+  }
+
+
+  .light-theme header {
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  
+  .light-theme h3, .light-theme h5, .light-theme h6 {
+    color: #333;
+  }
+  
+  .light-theme .card-custom {
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .light-theme .btn-custom {
+    background-color: #138496;
+    color: white;
+  }
+  
+  .light-theme footer {
+    background-color: #eeeeee;
+    color: #333;
+  }
+  
+  .light-theme .carousel .item , .light-theme .icon-block, .light-theme .card-content, .light-theme .card-image img {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .light-theme a {
+    color: #138496;
+  }
+   .light-theme .carousel .item p, .light-theme .carousel .item {
+    color: #000000;
+   }
