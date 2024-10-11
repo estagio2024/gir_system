@@ -302,9 +302,6 @@ footer {
 }
 
 
-#beneficios .container{
-    margin-left: 27px;
-}
 #beneficios .card {
     width: 90%;
 
@@ -331,7 +328,7 @@ footer {
 
 #beneficios .card {
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px;
     transition: 0.5s ease transform;
 }
 #beneficios .card:hover {
@@ -355,6 +352,9 @@ footer {
     font-size: 0.9rem;
     padding: 10px;
     text-align: justify; /* Justificar o texto */
+}
+#beneficios .card-content .card-title{
+    font-size: 1.5rem;
 }
 .light{
     text-align: justify;
