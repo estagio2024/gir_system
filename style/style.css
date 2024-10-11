@@ -23,7 +23,9 @@ header h5{
 section {
     padding: 60px 0;
 }
-
+#beneficios .container{
+    margin: 0 auto;
+}
 #slide {
     padding: 0;
 }
