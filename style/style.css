@@ -87,7 +87,6 @@ footer {
 }
 
 .card-title {
-    white-space: nowrap;
     color: #4caf50;
 }
 
@@ -303,10 +302,12 @@ footer {
 }
 
 
-
+#beneficios .container{
+    padding-left: 50px;
+}
 #beneficios .card {
     width: 90%;
-    margin: 0 auto;
+
     color: #000000;
 
 }
