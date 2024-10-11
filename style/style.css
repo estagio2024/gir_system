@@ -180,6 +180,9 @@ footer {
     .wrap .item:nth-child(3n) {
         margin-right: 0; /* Remove margem à direita no último item da linha */
     }
+    #beneficios .container{
+        padding-left: 10px;
+    }
 }
 
 /* Layout para telas pequenas (mobile) */
@@ -304,9 +307,7 @@ footer {
 
 #beneficios .card {
     width: 90%;
-
     color: #000000;
-
 }
 
 #beneficios .card-image {
