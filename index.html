@@ -21,10 +21,13 @@
         </div>
 </header>
 
+    <img  id="theme-toggle" src="./imgs/temas/lua.png" alt="Alternar Tema" class="alterar-tema" width="30">
+
+
 
 
 <!-- Slide de Imagens   
- <button id="theme-toggle" class="btn btn-custom">Alternar Tema</button>
+
 <section id="slide">
     <div class="carousel carousel-slider center">
         <div class="carousel-item" href="#one!">
@@ -376,25 +379,34 @@
 <script src="./js/script.js"></script>
 <script>
     const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
     const body = document.body;
-    body.classList.add('dark-theme');
-  
-    // Carregar o tema salvo no localStorage
+
+    // Carregar o tema salvo no localStorage ou definir o tema escuro como padrão
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      body.classList.add(savedTheme);
-    }
-  
-    themeToggle.addEventListener('click', function() {
-      if (body.classList.contains('light-theme')) {
-        body.classList.remove('light-theme');
-        localStorage.setItem('theme', '');
-      } else {
+    if (savedTheme === 'light-theme') {
         body.classList.add('light-theme');
-        localStorage.setItem('theme', 'light-theme');
-      }
+        themeToggle.src = './imgs/temas/sol.png'; // Mostrar o ícone de sol no tema claro
+    } else {
+        body.classList.add('dark-theme'); // Define o tema escuro como padrão
+        themeToggle.src = './imgs/temas/lua.png'; // Mostrar o ícone de lua no tema escuro
+    }
+
+    themeToggle.addEventListener('click', function() {
+        if (body.classList.contains('light-theme')) {
+            body.classList.remove('light-theme');
+            body.classList.add('dark-theme');
+            themeToggle.src = './imgs/temas/lua.png'; // Alterar para ícone de lua
+            localStorage.setItem('theme', 'dark-theme'); // Salva o tema escuro
+        } else {
+            body.classList.remove('dark-theme');
+            body.classList.add('light-theme');
+            themeToggle.src = './imgs/temas/sol.png'; // Alterar para ícone de sol
+            localStorage.setItem('theme', 'light-theme'); // Salva o tema claro
+        }
     });
-  </script>
+</script>
+
   
 </body>
 </html>

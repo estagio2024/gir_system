@@ -1,6 +1,11 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #121212; /* Fundo escuro */
     color: #ffffff; /* Texto claro */
+    transition: 1s ease background-color;
 }
 
 header {
@@ -112,7 +117,16 @@ footer {
     }
 }
 
-
+.alterar-tema{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 3000;
+    background-color: #000000;
+    scale: 1.3;
+    padding: 5px;
+    border-radius: 50%;
+}
 
 /* Estilo padrão para o carrossel */
 .carousel {
